@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'color_item.dart';
+import 'my_color_item.dart';
 
 
 //Create by LILI
@@ -11,6 +12,15 @@ class LinearGradiantPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Linear Gradiant Page"),
         backgroundColor: Color(0xff9AB999),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.arrow_forward),
+            onPressed: (){
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MyColorItem()));
+            },
+          )
+        ],
       ),
       body: Container(
         child: Column(
