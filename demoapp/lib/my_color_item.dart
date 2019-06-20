@@ -11,7 +11,7 @@ class _MyColorItemState extends State<MyColorItem> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Text("My Lam"),
+        title: Text("My Lam 123"),
         backgroundColor: Colors.blueAccent,
       ),
       body: Container(
