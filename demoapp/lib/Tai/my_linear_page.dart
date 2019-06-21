@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'color_item.dart';
-import 'my_color_item.dart';
 
+import 'package:demoapp/Tai/m_square_page.dart';
+import 'package:demoapp/Tai/my_color.dart';
 
-//Create by LILI
+class MyLinearPage extends StatefulWidget {
+  @override
+  _MyLinearPageState createState() => _MyLinearPageState();
+}
 
-class LinearGradiantPage extends StatelessWidget {
+class _MyLinearPageState extends State<MyLinearPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +20,7 @@ class LinearGradiantPage extends StatelessWidget {
             icon: Icon(Icons.arrow_forward),
             onPressed: (){
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => MyColorItem()));
+                  MaterialPageRoute(builder: (context) => MySquarePage()));
             },
           )
         ],
@@ -28,27 +31,27 @@ class LinearGradiantPage extends StatelessWidget {
             Expanded(
               flex: 3,
               child:
-                  ColorItem(Color(0xff9AB999), "#9AB999", Alignment.bottomLeft),
+              MyColor(Color(0xff9AB999), Alignment.bottomLeft),
             ),
             Expanded(
               flex: 1,
               child:
-                  ColorItem(Color(0xffFCCEAD), "#FCCEAD", Alignment.centerLeft),
-            ),
-            Expanded(
-              flex: 1,
-              child: ColorItem(
-                  Color(0xffFF6807F), "#F6807F", Alignment.centerLeft),
+              MyColor(Color(0xffFCCEAD), Alignment.bottomLeft),
             ),
             Expanded(
               flex: 1,
               child:
-                  ColorItem(Color(0xffEC485D), "#EC485D", Alignment.centerLeft),
+                  MyColor(Color(0xffFF6807F), Alignment.bottomLeft),
+            ),
+            Expanded(
+              flex: 1,
+              child:
+              MyColor(Color(0xffEC485D), Alignment.bottomLeft),
             ),
             Expanded(
               flex: 6,
               child:
-                  ColorItem(Color(0xff27363B), "#27363B", Alignment.topLeft),
+              MyColor(Color(0xff27363B), Alignment.bottomLeft),
             )
           ],
         ),

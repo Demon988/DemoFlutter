@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'linear_gradiant_page.dart';
+import 'package:demoapp/Tinh/linear_gradiant_page.dart';
 
 //Create by LILI
 class SquarePage extends StatefulWidget {

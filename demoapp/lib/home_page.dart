@@ -1,5 +1,7 @@
-import 'package:demoapp/square_page.dart';
+import 'package:demoapp/Tinh/square_page.dart';
 import 'package:flutter/material.dart';
+
+import 'package:demoapp/Tai/m_square_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -19,7 +21,7 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(Icons.arrow_forward),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SquarePage()));
+                    MaterialPageRoute(builder: (context) => MySquarePage()));
               })
         ],
       ),

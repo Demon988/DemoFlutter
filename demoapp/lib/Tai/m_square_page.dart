@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:demoapp/Tai/my_linear_page.dart';
 
-class MyColorItem extends StatefulWidget {
+class MySquarePage extends StatefulWidget {
   @override
-  _MyColorItemState createState() => _MyColorItemState();
+  _MySquarePageState createState() => _MySquarePageState();
 }
 
-class _MyColorItemState extends State<MyColorItem> {
+class _MySquarePageState extends State<MySquarePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -13,6 +14,15 @@ class _MyColorItemState extends State<MyColorItem> {
       appBar: AppBar(
         title: Text("My Tinh 111"),
         backgroundColor: Colors.blueAccent,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.arrow_forward),
+            onPressed: (){
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MyLinearPage()));
+            },
+          )
+        ],
       ),
       body: Container(
         child: Column(
